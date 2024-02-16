@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  &__container {
+    display: flex;
+    width: $container-width;
+    padding: $gap-default 0;
+  }
+  &__logo {
+    display: flex;
+
+    img {
+      height: 43px;
+      width: 70px;
+    }
+  }
+  &__menu {
+    align-items: center;
+    display: flex;
+    margin: 0;
+    list-style: none;
+    margin-left: auto;
+    width: 66%;
+
+    li:not(:last-child) {
+      @include addMarginRight(2);
+    }
+
+    li a {
+      font-size: 12px;
+      font-weight: 400;
+      color: $dark-grey-default;
+      line-height: 12px;
+      text-decoration: none;
+      text-transform: uppercase;
+      box-sizing: border-box;
+      padding: 4px;
+      &:hover {
+        border-top: 1px solid $dark-grey-default;
+        border-bottom: 1px solid $dark-grey-default;
+      }
+    }
+
+    
+  }
+}

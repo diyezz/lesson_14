@@ -1,0 +1,19 @@
+$white-default: #FFF;
+$grey-default: #F2F2F2;
+$grey-secondary: #FBFBFB;
+$grey-headline: #BDBDBD;
+$grey-btn: #F9F9F9;
+$light-grey: #E0E0E0;
+$dark-grey-default: #333;
+$dark-grey-secondary: #2C2C2C;
+
+$gap-default: 30px;
+$container-width: 1170px;
+
+@mixin addMarginBottom($multiplier: 1, $margin-default: 30px) {
+  margin-bottom: $margin-default * $multiplier;
+}
+
+@mixin addMarginRight($multiplier: 1, $margin-default: 30px) {
+  margin-right: $margin-default * $multiplier;
+}

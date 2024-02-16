@@ -2,3 +2,249 @@ body {
   margin: 0;
   padding: 0;
 }
+
+h1, h2, h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.header__container {
+  display: flex;
+  width: 1170px;
+  padding: 30px 0;
+}
+.header__logo {
+  display: flex;
+}
+.header__logo img {
+  height: 43px;
+  width: 70px;
+}
+.header__menu {
+  align-items: center;
+  display: flex;
+  margin: 0;
+  list-style: none;
+  margin-left: auto;
+  width: 66%;
+}
+.header__menu li:not(:last-child) {
+  margin-right: 60px;
+}
+.header__menu li a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  line-height: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 4px;
+}
+.header__menu li a:hover {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+body {
+  font-family: system-ui, -apple-system, Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+}
+main .main__container {
+  display: flex;
+  margin: 0 auto;
+  width: 1170px;
+  flex-direction: column;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 90px;
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+}
+.slider__text-wrapper {
+  display: flex;
+  height: calc(50% + 70px);
+  align-items: flex-end;
+  margin-bottom: 90px;
+}
+.slider__navigation {
+  display: flex;
+  flex-direction: column;
+}
+.slider__images {
+  display: flex;
+  margin-left: auto;
+  width: 66%;
+}
+.slider__slide {
+  width: 100%;
+}
+.slider__slide img {
+  width: 100%;
+}
+.slider__btns {
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
+}
+.slider__btn {
+  cursor: pointer;
+  display: flex;
+  background-color: #FFF;
+  border: 1px solid #F2F2F2;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.slider__btn:not(:last-child) {
+  margin-right: 23px;
+}
+.slider__btn--grey {
+  background-color: #F9F9F9;
+}
+.slider__btn img {
+  height: 24px;
+  width: 24px;
+}
+.slider__counter {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 400;
+  color: #BDBDBD;
+}
+.slider__counter .line-divider {
+  margin: 0 26px;
+  height: 31px;
+}
+.slider__counter .line-divider img {
+  height: 31px;
+}
+
+.headline {
+  color: #BDBDBD;
+  font-size: 64px;
+  font-weight: 200;
+  line-height: 64px;
+  text-transform: uppercase;
+}
+.headline span {
+  font-weight: 700;
+  color: #333;
+}
+
+.about {
+  display: flex;
+  background-color: #FBFBFB;
+  padding: 30px 100px;
+  gap: 30px;
+  margin-bottom: 90px;
+}
+.about__images {
+  display: grid;
+  grid-template-columns: 270px 270px;
+  grid-template-rows: 265px 80px;
+  gap: 30px;
+}
+.about__images > img:nth-child(1) {
+  grid-column: 1/1;
+}
+.about__images > img:nth-child(2) {
+  margin-top: 30px;
+}
+.about__img-wrapper {
+  width: 100%;
+  position: relative;
+  max-height: 115px;
+  grid-column: 1/1;
+  grid-row-start: 2;
+}
+.about__img-wrapper img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.about__content {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.about__content h3 {
+  color: #BDBDBD;
+  font-size: 58px;
+  font-weight: 200;
+  line-height: 58px;
+  margin-bottom: 20px;
+}
+.about__content p {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 25px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.btn-default {
+  align-items: center;
+  background-color: #FFF;
+  border: 1px solid #F2F2F2;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  font-size: 12px;
+  height: 71px;
+  justify-content: center;
+  letter-spacing: 1px;
+  min-width: 222px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in;
+}
+.btn-default:hover {
+  border-color: #333;
+}
+.btn-default:hover .icon {
+  transform: translateX(8px);
+}
+.btn-default--dark {
+  background-color: #333;
+  border-color: #333;
+  color: #FFF;
+}
+.btn-default--dark .icon--arr-right {
+  background-image: url("./../../../assets/images/arrow-right-white.png");
+}
+.btn-default--dark:hover {
+  border-color: #FFF;
+}
+.btn-default--dark:hover .icon {
+  transform: translateX(8px);
+}
+
+.icon {
+  background-size: cover;
+  height: 24px;
+  transition: all 0.3s ease-in;
+  width: 24px;
+}
+.icon--arr-right {
+  background-image: url("./../../../assets/images/arrow-right.png");
+}
